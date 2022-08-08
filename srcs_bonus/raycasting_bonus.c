@@ -6,7 +6,7 @@
 /*   By: tevan-de <tevan-de@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/01/10 20:25:46 by tevan-de      #+#    #+#                 */
-/*   Updated: 2022/08/08 14:39:57 by tevan-de      ########   odam.nl         */
+/*   Updated: 2022/08/08 14:46:55 by tevan-de      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,14 +92,13 @@ void	raycasting(t_data data)
 		initialize_ray(data, &ray, increase, x);
 		first_intercept(&ray);
 		last_intercept(data.player.map, &data.sprite, &ray);
-		if (ray.hit_side == 0)
-			draw_2d_ray(data, data.mlx.res, ray, 0x0000FF00);
-		else if (ray.hit_side == 1)
-			draw_2d_ray(data, data.mlx.res, ray, 0x000000FF);
 		draw_3d_ray(data.img, data.paint, ray, data.mlx.res);
 		x++;
 	}
 	if (data.sprite.n_visible > 0)
 		draw_sprites(data, data.player);
+	x = 0;
+	while (x < data.mlx.res.x)
+		draw_2d_ray(data, data.mlx.res, ray, 0x0000FF00);
 	draw_minimap(data, data.player.pos, data.player.map_size, data.player.map);
 }
