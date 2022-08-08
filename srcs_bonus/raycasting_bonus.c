@@ -6,7 +6,7 @@
 /*   By: tevan-de <tevan-de@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/01/10 20:25:46 by tevan-de      #+#    #+#                 */
-/*   Updated: 2022/08/08 14:49:24 by tevan-de      ########   odam.nl         */
+/*   Updated: 2022/08/08 14:50:26 by tevan-de      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,11 +97,5 @@ void	raycasting(t_data data)
 	}
 	if (data.sprite.n_visible > 0)
 		draw_sprites(data, data.player);
-	x = 0;
-	while (x < data.mlx.res.x)
-	{
-		draw_2d_ray(data, data.mlx.res, ray, 0x0000FF00);
-		x++;
-	}
 	draw_minimap(data, data.player.pos, data.player.map_size, data.player.map);
 }
