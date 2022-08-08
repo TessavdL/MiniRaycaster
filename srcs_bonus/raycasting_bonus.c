@@ -6,7 +6,7 @@
 /*   By: tevan-de <tevan-de@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/01/10 20:25:46 by tevan-de      #+#    #+#                 */
-/*   Updated: 2021/07/24 12:02:49 by tevan-de      ########   odam.nl         */
+/*   Updated: 2022/08/08 14:39:57 by tevan-de      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,7 +99,7 @@ void	raycasting(t_data data)
 		draw_3d_ray(data.img, data.paint, ray, data.mlx.res);
 		x++;
 	}
-	draw_minimap(data, data.player.pos, data.player.map_size, data.player.map);
 	if (data.sprite.n_visible > 0)
 		draw_sprites(data, data.player);
+	draw_minimap(data, data.player.pos, data.player.map_size, data.player.map);
 }
