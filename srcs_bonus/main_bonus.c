@@ -6,7 +6,7 @@
 /*   By: tevan-de <tevan-de@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/06/28 15:54:51 by tevan-de      #+#    #+#                 */
-/*   Updated: 2022/02/28 11:34:15 by tevan-de      ########   odam.nl         */
+/*   Updated: 2022/08/08 14:13:55 by tevan-de      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -113,11 +113,8 @@ int	main(int argc, char **argv)
 		}
 		else
 			cub3d(data, 0);
-		return (0);
 	}
 	else
-	{
-		ft_putendl_fd("Error\nInvalid number of arguments", 1);
-		return (1);
-	}
+		exit_program("Invalid number of arguments");
+	return (0);
 }
