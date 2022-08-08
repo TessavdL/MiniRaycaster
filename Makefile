@@ -6,7 +6,7 @@
 #    By: tevan-de <tevan-de@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/06/07 10:51:44 by tevan-de      #+#    #+#                  #
-#    Updated: 2022/02/16 15:55:13 by tevan-de      ########   odam.nl          #
+#    Updated: 2022/08/08 14:52:19 by tevan-de      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,7 +42,6 @@ BONUSCFILES		:=	bmp_bonus.c						\
 					colors_bonus.c					\
 					cub3d_bonus.c					\
 					cub3d_utils_bonus.c				\
-					draw_2d_ray_bonus.c				\
 					draw_3d_ray_bonus.c				\
 					draw_floor_bonus.c				\
 					draw_minimap_bonus.c			\

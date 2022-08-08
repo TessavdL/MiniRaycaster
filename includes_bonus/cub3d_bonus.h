@@ -6,7 +6,7 @@
 /*   By: tevan-de <tevan-de@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/02/16 15:45:34 by tevan-de      #+#    #+#                 */
-/*   Updated: 2022/03/01 11:21:04 by tevan-de      ########   odam.nl         */
+/*   Updated: 2022/08/08 14:52:29 by tevan-de      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -308,11 +308,6 @@ int					abbs(int n);
 void				calculate_distance(t_ray *ray);
 double				fix_angle(double angle);
 int					ft_strcmp(const char *s1, const char *s2);
-
-/*
-**draw_2d_ray_bonus.c
-*/
-void				draw_2d_ray(t_data data, t_ints res, t_ray ray, int color);
 
 /*
 **draw_3d_ray_bonus.c
